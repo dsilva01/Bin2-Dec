@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bin2Dec</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="head"><h1>Bin2Dec</h1></header>
+      <div class="content">
+        <div class="box">
+          <strong>Numerical Base</strong>
+          <form autocomplete="off" id="formulary">
+            <div class="selectBase">
+              <label for="base2">Base 2</label>
+              <input type="radio" name="base" id="base2" checked="checked" />
+              <label for="base10">Base 10</label>
+              <input type="radio" name="base" id="base10" />
+            </div>
+            <p id="messageError">Only 0 and 1</p>
+            <div class="convertNumber">
+              <div class="field">
+                <label for="numberConvert" id="numberConvertLabel"
+                  >Binary</label
+                >
+                <input
+                  type="text"
+                  name=""
+                  id="numberConvert"
+                  class="fieldNumber"
+                  placeholder="Binary number"
+                />
+                <span class="checkmark"></span>
+              </div>
+              <div class="field">
+                <label for="numberConverted" id="numberConvertedLabel"
+                  >Decimal</label
+                >
+                <input
+                  type="text"
+                  name=""
+                  id="numberConverted"
+                  class="fieldNumber"
+                  placeholder="Decimal number"
+                  readonly
+                />
+                <span class="checkmark"></span>
+              </div>
+            </div>
+            <input type="submit" id="buttonSubmit" value="Convert" />
+          </form>
+        </div>
+      </div>
+      <div class="copyright">
+        Made by
+        <a target="_blank" href="https://github.com/dsilva01"
+          >Desiderio Silva</a
+        >
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
