@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background: #383a59;
+  color: #bcc2cd;
+  
+}
+
+.app .head {
+  width: 100vw;
+  height: 40px;
+  background: #282a36;
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+.app .content {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app .content .box {
+  width: 500px;
+  display: flex;
+  flex-flow: column;
+  background: #282a36;
+  margin: 0 20px;
+  padding: 20px 20px 30px;
+  border-radius: 10px;
+  line-height: 30px;
+}
+
+.app .content .box strong {
+  font-size: 30px;
+  margin: 10px 0 14px 0;
+}
+
+.app .content .box form {
+  display: flex;
+  flex-flow: column;
+}
+
+.app .content .box form .selectBase {
+  font-size: 22px;
+}
+
+.app .content .box form .convertNumber {
+  display: flex;
+}
+
+.app .content .box form #messageError {
+  display: none;
+  font-size: 22px;
+  color: red;
+}
+
+.app .content .box form .convertNumber .field {
+  display: flex;
+  flex-flow: column;
+  margin: 10px 20px;
+}
+
+.app .content .box form .convertNumber .field label {
+  font-size: 22px;
+}
+
+.app .content .box form .convertNumber .field .fieldNumber {
+  width: 200px;
+  height: 35px;
+  background: transparent;
+  color: #bcc2cd;
+  border: 1px solid #bd93f9;
+  border-radius: 10px;
+  outline: none;
+  font-size: 20px;
+  margin: 6px 0 20px;
+}
+
+.app .content .box form #buttonSubmit {
+  width: 90px;
+  padding: 5px;
+  background: #bd93f9;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.app .copyright {
+  position: fixed;
+  color: #bcc2cd;
+  right: 20px;
+  bottom: 10px;
+  font-size: 20px;
+}
+
+.app .copyright a {
+  color: #bcc2cd;
+}
